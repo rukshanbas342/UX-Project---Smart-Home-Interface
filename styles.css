@@ -1,0 +1,248 @@
+/* Global Layout Tokens */
+:root {
+    --page-width: 1200px;
+    --page-padding: 32px;
+    --nav-shadow: 0 4px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'K2D', sans-serif;
+    background-color: #000837;
+    color: #FFFFFF;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NavBar Styles */
+.navbar {
+    width: 100%;
+    background-color: #000837;
+    box-shadow: var(--nav-shadow);
+}
+
+.nav-content {
+    max-width: var(--page-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px var(--page-padding) 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Content */
+.home-page {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 80px var(--page-padding) 120px;
+}
+
+.home-content {
+    max-width: var(--page-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3em;
+}
+
+.subheading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.illustration-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.discover-button {
+    padding: 12px 32px;
+    background-color: #FFFFFF;
+    color: #000837;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: opacity 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-button:hover {
+    opacity: 0.9;
+}
+
+.discover-button:active {
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 40px var(--page-padding);
+}
+
+.footer-content {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+}
+
+.footer-tagline {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-nav a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.footer-right .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-info h4 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contact-info p {
+    font-weight: 700;
+    font-size: 14px;
+}

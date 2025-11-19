@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHomeU - MySmartHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mysmarthome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;600;700&family=Inter:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">SmartHomeU</h1>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mysmarthome.html" class="nav-link">MySmartHome</a>
+                <a href="contactus.html" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="mysmarthome-page">
+        <h2 class="greeting">Good Evening, Alex</h2>
+
+        <div class="dashboard-grid">
+            <!-- Frame 2: Living Areas -->
+            <section class="control-frame frame-2">
+                <div class="room-block">
+                    <h3 class="room-title">Living Room</h3>
+                    <div class="control-section">
+                        <p class="control-label">Lights</p>
+                        <div class="slider-container">
+                            <svg class="control-icon lightbulb-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 3.88V0M15.5 31V27.12M27.12 15.5H31M0 15.5H3.88M25.13 5.87L27.12 3.88M3.88 27.12L5.87 25.13M25.13 25.13L27.12 27.12M3.88 3.88L5.87 5.87" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M15.5 7.75C11.63 7.75 8.5 10.88 8.5 14.75C8.5 18.62 11.63 21.75 15.5 21.75C19.37 21.75 22.5 18.62 22.5 14.75C22.5 10.88 19.37 7.75 15.5 7.75Z" stroke="#FFFFFF" stroke-width="2"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="living-room-lights">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-section">
+                        <p class="control-label">Fan</p>
+                        <div class="slider-container">
+                            <svg class="control-icon fan-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 2.94C8.82 2.94 3.44 8.32 3.44 15C3.44 21.68 8.82 27.06 15.5 27.06C22.18 27.06 27.56 21.68 27.56 15C27.56 8.32 22.18 2.94 15.5 2.94ZM15.5 25.13C10.13 25.13 5.87 20.87 5.87 15.5C5.87 10.13 10.13 5.87 15.5 5.87C20.87 5.87 25.13 10.13 25.13 15.5C25.13 20.87 20.87 25.13 15.5 25.13Z" fill="#FFFFFF"/>
+                                <path d="M13.66 26.96H14.74V28.04H13.66V26.96Z" fill="#FFFFFF"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="living-room-fan">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-block">
+                    <h3 class="room-title">Bedroom</h3>
+                    <div class="control-section">
+                        <p class="control-label">Lights</p>
+                        <div class="slider-container">
+                            <svg class="control-icon lightbulb-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 3.88V0M15.5 31V27.12M27.12 15.5H31M0 15.5H3.88M25.13 5.87L27.12 3.88M3.88 27.12L5.87 25.13M25.13 25.13L27.12 27.12M3.88 3.88L5.87 5.87" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M15.5 7.75C11.63 7.75 8.5 10.88 8.5 14.75C8.5 18.62 11.63 21.75 15.5 21.75C19.37 21.75 22.5 18.62 22.5 14.75C22.5 10.88 19.37 7.75 15.5 7.75Z" stroke="#FFFFFF" stroke-width="2"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="bedroom-lights">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-section">
+                        <p class="control-label">Fan</p>
+                        <div class="slider-container">
+                            <svg class="control-icon fan-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 2.94C8.82 2.94 3.44 8.32 3.44 15C3.44 21.68 8.82 27.06 15.5 27.06C22.18 27.06 27.56 21.68 27.56 15C27.56 8.32 22.18 2.94 15.5 2.94ZM15.5 25.13C10.13 25.13 5.87 20.87 5.87 15.5C5.87 10.13 10.13 5.87 15.5 5.87C20.87 5.87 25.13 10.13 25.13 15.5C25.13 20.87 20.87 25.13 15.5 25.13Z" fill="#FFFFFF"/>
+                                <path d="M13.66 26.96H14.74V28.04H13.66V26.96Z" fill="#FFFFFF"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="bedroom-fan">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-block">
+                    <h3 class="room-title">Corridor</h3>
+                    <div class="control-section">
+                        <p class="control-label">Lights</p>
+                        <div class="slider-container">
+                            <svg class="control-icon lightbulb-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 3.88V0M15.5 31V27.12M27.12 15.5H31M0 15.5H3.88M25.13 5.87L27.12 3.88M3.88 27.12L5.87 25.13M25.13 25.13L27.12 27.12M3.88 3.88L5.87 5.87" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M15.5 7.75C11.63 7.75 8.5 10.88 8.5 14.75C8.5 18.62 11.63 21.75 15.5 21.75C19.37 21.75 22.5 18.62 22.5 14.75C22.5 10.88 19.37 7.75 15.5 7.75Z" stroke="#FFFFFF" stroke-width="2"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="corridor-lights">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frame 3: Thermostat -->
+            <section class="control-frame frame-3">
+                <h3 class="room-title">Thermostat</h3>
+                <div class="thermostat-container">
+                    <svg class="thermostat-circle" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="150" cy="150" r="146.5" stroke="#A6A6A6" stroke-width="7"/>
+                    </svg>
+                    <p class="temperature-display">22°</p>
+                    <button class="icon-button temp-plus" aria-label="Increase temperature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5V19" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M5 12H19" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="icon-button temp-minus" aria-label="Decrease temperature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="switch-grid">
+                    <div class="switch-container">
+                        <p class="switch-label">A/C</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider-switch"></span>
+                        </label>
+                    </div>
+
+                    <div class="switch-container">
+                        <p class="switch-label">Auto</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frame 4: Music Control -->
+            <section class="control-frame frame-4">
+                <h3 class="room-title">Music Control</h3>
+                
+                <div class="spotify-logo-container">
+                    <div class="spotify-logo">Spotify</div>
+                </div>
+
+                <div class="music-controls">
+                    <button class="music-button skip-back" aria-label="Previous">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.25 7.5L24.38 22.5L11.25 37.5V7.5Z" fill="#FFFFFF"/>
+                            <rect x="30" y="7.5" width="3" height="30" fill="#FFFFFF"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="music-button play-pause" aria-label="Play/Pause">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="30" fill="#FFFFFF"/>
+                            <path d="M20 16.34L35 30L20 43.66V16.34Z" fill="#000000"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="music-button skip-forward" aria-label="Next">
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 15.5L31 31L15.5 46.5V15.5Z" fill="#FFFFFF"/>
+                            <rect x="40" y="15.5" width="3" height="31" fill="#FFFFFF"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="volume-controls">
+                    <div class="volume-control">
+                        <p class="volume-label">Living Room</p>
+                        <div class="slider-container">
+                            <svg class="volume-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 5.8V38.85H18.89L37.5 45V0L18.89 5.8H3.75Z" fill="#FFFFFF"/>
+                                <path d="M18.89 37.59H20.46V38.85H18.89V37.59Z" fill="#FFFFFF"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="living-room-volume">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="volume-control">
+                        <p class="volume-label">Bedroom</p>
+                        <div class="slider-container">
+                            <svg class="volume-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 5.8V38.85H18.89L37.5 45V0L18.89 5.8H3.75Z" fill="#FFFFFF"/>
+                                <path d="M18.89 37.59H20.46V38.85H18.89V37.59Z" fill="#FFFFFF"/>
+                            </svg>
+                            <div class="slider-wrapper">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="bedroom-volume">
+                                <span class="slider-value">50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3 class="footer-logo">SmartHomeU</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="images/logo-instagram.svg" alt="Instagram logo">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <img src="images/logo-facebook.svg" alt="Facebook logo">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="X">
+                        <img src="images/logo-x.svg" alt="X logo">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Pinterest">
+                        <img src="images/logo-pinterest.svg" alt="Pinterest logo">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p class="footer-tagline">Your home. Smarter. Simpler. Seamless</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="mysmarthome.html">MySmartHome</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="footer-right">
+                <div class="contact-info">
+                    <h4>Contact Us</h4>
+                    <p>info@smarthomeu.ca</p>
+                    <p>647-291-0972</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mysmarthome.js"></script>
+</body>
+</html>
